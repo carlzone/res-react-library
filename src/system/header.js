@@ -33,6 +33,12 @@ class Header extends Component {
                 link="/register"
                 class="p-1 px-2 me-2 text-dark"
               />
+              <NaviItem
+                name="iFrame"
+                link="/iframe"
+                class="p-1 px-2 me-2 text-dark"
+              />
+              
             </NaviBarContainer>
           </NaviCollapse>
         </NaviBar>

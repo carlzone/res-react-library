@@ -6,6 +6,8 @@ import PageView from "./system/pageview";
 import TestPage from "./system/pages/testpage";
 import Registration from "./system/pages/registration";
 import CardTest from "./system/pages/cardtest";
+import IFrame from "./system/pages/iframe";
+
 
 class App extends Component {
 
@@ -39,6 +41,13 @@ class App extends Component {
         pageType="path">
           <CardTest />
         </PageView>
+        <PageView 
+        pageNow={this.state.page}
+        pageShow="/iframe"
+        pageType="path">
+          <IFrame />
+        </PageView>
+        
       </div>
     );
   }

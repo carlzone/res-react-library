@@ -7,7 +7,8 @@ class CardTest extends Component {
     render(){
         
         return(<>
-            <div className="container-md">
+            <div className="container-md d-flex flex-wrap flex-row justify-content-center justify-content-md-start">
+                <CardBase />
                 <CardBase />
             </div>
         </>);

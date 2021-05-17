@@ -8,7 +8,10 @@ PROPS LIST
 - id (required)
 - name (required)
 - type (required)
-- placeholder optional
+- default (optional)
+- placeholder (optional)
+- formClass (optional)
+- dispClass (optional)
 */
 class EditableLabel extends Component {
   constructor(props) {
@@ -20,10 +23,10 @@ class EditableLabel extends Component {
 
   render() {
     return (
-      <div className="form-group border">
+      <div className={"form-group " + this.props.formClass}>
         <div className="d-grid">
           <button
-            className="btn"
+            className={"btn " + this.props.dispClass}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={"#" + this.props.triggerID}
@@ -31,7 +34,7 @@ class EditableLabel extends Component {
             aria-controls={this.props.triggerID}
           >
             {this.state.value} &nbsp;
-            <i className="fas fa-edit float-end"></i>
+            <span className="fas fa-edit ms-auto"></span>
           </button>
         </div>
         <div className="collapse" id={this.props.triggerID}>
